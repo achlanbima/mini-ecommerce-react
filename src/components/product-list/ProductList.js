@@ -30,7 +30,7 @@ const Index = (props) => {
                     {props.products.data.map(product=>(
                         <tr key={product.sku}>
                             <td className="align-middle">
-                                <img src={process.env.PUBLIC_URL + `/${product.imageUrl}`} alt={product.image_url} height={50} />
+                                <img src={`${process.env.PUBLIC_URL}/${product.imageUrl}`} alt={product.image_url} height={50} />
                             </td>
                             <td className="align-middle">{product.name}</td>
                             <td className="align-middle">$ {product.unitPrice}</td>
